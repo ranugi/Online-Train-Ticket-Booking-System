@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.maintenance.Servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/Log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CrewInsert</servlet-name>
+		<servlet-class>com.maintenance.Servlet.CrewInsert</servlet-class>
+	</servlet>
+    <servlet-mapping>
+    	<servlet-name>CrewInsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>updateMember</servlet-name>
+		<servlet-class>com.maintenance.Servlet.UpdateMemberServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateMember</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteMember</servlet-name>
+		<servlet-class>com.maintenance.Servlet.DeleteMemberServlet</servlet-class>
+	</servlet>
+	 
+	<servlet-mapping>
+		<servlet-name>deleteMember</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>
